@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralCalculator">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/input1"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginTop="202sp"
+        android:text="@string/add"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270sp"
+        android:layout_toRightOf="@id/add"
+        android:text="@string/subtract"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270sp"
+        android:layout_toRightOf="@id/subtract"
+        android:text="@string/multiply"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270sp"
+        android:layout_toRightOf="@id/multiply"
+        android:text="@string/divide"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ResultTextViewGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:padding="10dp" />
+
+
+</RelativeLayout>
