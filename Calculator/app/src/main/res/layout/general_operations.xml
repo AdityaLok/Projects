@@ -25,39 +25,30 @@
 
     <Button
         android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/input1"
         android:layout_marginTop="202sp"
         android:text="@string/add"
-        android:textSize="20sp" />
+        style="@style/CustomButton"
+        />
 
     <Button
         android:id="@+id/subtract"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270sp"
         android:layout_toRightOf="@id/add"
-        android:text="@string/subtract"
-        android:textSize="20sp" />
+        style="@style/CustomButton"
+        android:text="@string/subtract" />
 
     <Button
         android:id="@+id/multiply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270sp"
         android:layout_toRightOf="@id/subtract"
         android:text="@string/multiply"
-        android:textSize="20sp" />
+        style="@style/CustomButton"
+        />
 
     <Button
         android:id="@+id/divide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270sp"
         android:layout_toRightOf="@id/multiply"
         android:text="@string/divide"
-        android:textSize="20sp" />
+        style="@style/CustomButton" />
 
     <TextView
         android:id="@+id/ResultTextViewGeneral"

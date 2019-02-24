@@ -10,4 +10,13 @@
     <string name="divide">/</string>
     <string name="log">log</string>
     <string name="ln">ln</string>
+    <string name="my_account">Mon compte</string>
+    <string name="settings">Réglages</string>
+    <string name="twos_table">Table à deux</string>
+    <string name="open">Fr_Open</string>
+    <string name="close">Fr_Close</string>
+    <string name="main_page">FR_Main Page</string>
+    <string name="options">FR_Options</string>
+
+
 </resources>

@@ -18,6 +18,34 @@ import android.widget.TextView;
 public class ScientificCalculator extends Fragment {
 
     private OnFragmentInteractionListener mListener;
+    private EditText mInput_1EditText;
+    private TextView mResultTextView;
+    private String result;
+    private Double input;
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if (mInput_1EditText.getText().length() > 0) {
+                switch (v.getId()) {
+                    case R.id.log:
+                        Log.d("TAG", mInput_1EditText.getText().toString());
+                        //TODO use editTest Text
+                        input = Double.parseDouble(mInput_1EditText.getText().toString());
+                        result = String.valueOf(Math.log(input));
+                        mResultTextView.setText(result);
+                        break;
+
+                    case R.id.ln:
+                        input = Double.parseDouble(mInput_1EditText.getText().toString());
+                        result = String.valueOf(Math.pow(input, 10));
+                        mResultTextView.setText(result);
+                        break;
+
+                }
+
+            }
+        }
+    };
 
     public ScientificCalculator() {
         // Required empty public constructor
@@ -41,11 +69,6 @@ public class ScientificCalculator extends Fragment {
         }
     }
 
-    private EditText mInput_1EditText;
-    private TextView mResultTextView;
-    private String result;
-    private Double input;
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -58,31 +81,6 @@ public class ScientificCalculator extends Fragment {
         buttonLog.setOnClickListener(onClickListener);
         buttonLn.setOnClickListener(onClickListener);
     }
-
-    View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if(mInput_1EditText.getText().length()>0){
-                switch (v.getId()) {
-                    case R.id.log:
-                        Log.d("TAG", mInput_1EditText.getText().toString());
-                        //TODO use editTest Text
-                        input = Double.parseDouble(mInput_1EditText.getText().toString());
-                        result = String.valueOf(Math.log(input));
-                        mResultTextView.setText(result);
-                        break;
-
-                    case R.id.ln:
-                        input = Double.parseDouble(mInput_1EditText.getText().toString());
-                        result = String.valueOf(Math.pow(input,10));
-                        mResultTextView.setText(result);
-                        break;
-
-                }
-
-            }
-        }
-    };
 
     @Override
     public void onAttach(Context context) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MR_Calculator</string>
+    <string name="app_name">कॅल्क्युलेटर</string>
     <string name="action_settings">Settings</string>
     <string name="general_operations">MR_General Calculator</string>
     <string name="scietific_operations">MR_Scientific Calculator</string>
@@ -10,4 +10,12 @@
     <string name="divide">/</string>
     <string name="log">log</string>
     <string name="ln">ln</string>
+    <string name="my_account">माझे खाते</string>
+    <string name="settings">सेटिंग्ज</string>
+    <string name="twos_table">दोन टेबल</string>
+    <string name="open">Mr_open</string>
+    <string name="close">Mr_close</string>
+    <string name="options">MR_Options</string>
+
+
 </resources>

@@ -6,32 +6,31 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
-int noTabs;
+    int noTabs;
 
     public PagerAdapter(FragmentManager fm, Integer noTabs) {
         super(fm);
-        this.noTabs= noTabs;
+        this.noTabs = noTabs;
     }
 
     @Override
     public Fragment getItem(int position) {
-         switch (position)
-         {
-             case 0:
-                 GeneralCalculator tab1= new GeneralCalculator();
-                 return tab1;
+        switch (position) {
+            case 0:
+                GeneralCalculator tab1 = new GeneralCalculator();
+                return tab1;
 
-             case 1:
-                 ScientificCalculator tab2=new ScientificCalculator();
-                 return tab2;
+            case 1:
+                ScientificCalculator tab2 = new ScientificCalculator();
+                return tab2;
 
-             default:
-                     return null;
-         }
+            default:
+                return null;
+        }
     }
 
     @Override
     public int getCount() {
-        return noTabs ;
+        return noTabs;
     }
 }
